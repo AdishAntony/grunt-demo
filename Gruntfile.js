@@ -18,10 +18,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
   
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'default2']);
+    grunt.registerTask('default', ['uglify', 'printSomething']);
 
     // A very basic default task.
-    grunt.registerTask('default2', function() {
+    grunt.registerTask('printSomething', function() {
         grunt.log.write('Logging some stuff...').ok();
     });
   
